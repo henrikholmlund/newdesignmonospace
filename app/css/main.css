@@ -1,0 +1,90 @@
+/* fonts */
+/* variables for media queries, not using bootstraps less-files*/
+/* color variables */
+/* Element styles */
+body {
+  padding-top: 70px;
+  font-family: 'Courier', monospace;
+  color: black;
+  padding-bottom: 0; }
+
+h1 {
+  font-size: 28px; }
+
+a {
+  color: red; }
+  a:hover {
+    color: red; }
+
+.navbar-default {
+  background: none no-repeat;
+  border: none;
+  border: 0 !important;
+  box-shadow: none !important; }
+  .navbar-default a {
+    color: #000; }
+    .navbar-default a:visited {
+      text-decoration: none; }
+
+.main-navigation {
+  background-color: white;
+  font-size: 28px;
+  border: none; }
+
+.parallax-div {
+  margin-top: 120px;
+  margin-left: 10%;
+  font-size: 24px; }
+
+.about-me {
+  padding-top: 100px;
+  color: black;
+  font-size: 4vw;
+  margin: 10px; }
+
+.portfolio-list {
+  padding: 50px 20px 150px 20px;
+  font-size: 5vw;
+  line-height: 7vw;
+  margin-top: 150px;
+  margin-bottom: 170px; }
+  .portfolio-list a:visited {
+    color: red; }
+
+.footer-nav {
+  bottom: 0;
+  left: 0;
+  font-size: 28px;
+  margin-bottom: 0; }
+  .footer-nav a {
+    color: black; }
+    .footer-nav a:visited {
+      text-decoration: none; }
+
+@media (min-width: 480px) {
+  .portfolio-list {
+    font-size: 5vw;
+    line-height: 7vw; }
+  .about-me {
+    font-size: 3vw; } }
+
+@media (min-width: 768px) {
+  .portfolio-list {
+    font-size: 2.73vw;
+    line-height: 5vw; } }
+
+@media (min-width: 992px) {
+  .portfolio-list {
+    font-size: 1.5vw;
+    line-height: 3vw;
+    padding: 0 0 100px 0; }
+  .about-me {
+    font-size: 1.75vw; } }
+
+@media (min-width: 1200px) {
+  .portfolio-list {
+    font-size: 1.3vw;
+    line-height: 3vw;
+    padding: 0 0 75px 0; }
+  .about-me {
+    font-size: 1.5vw; } }
