@@ -7,78 +7,121 @@
     <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--endbuild-->
 </head>
 <body>
+
+
     <div class="visible-md visible-lg parallax-div">
         <div class="parallax-message" data-0="transform: translate3d(0px, 0px, 0px);"
-             data-500="transform: translate3d(0px, 500px, 0px);">
+             data-500="transform: translate3d(0px, 550px, 0px);">
             <h1>Portfolio</h1>
         </div>
     </div>
 
-    <nav class="navbar navbar-default navbar-fixed-top main-navigation" id="top">
+<div class="visible-md visible-lg navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top main-navigation" id="desk-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4" id="Menu-toggle">Menu</div>
-                <div class="col-md-4" id="About-toggle"><a class='scroll' href='#About-top'>About</a></div>
-                <div class="col-md-4"><a href="index-svenska.html">Language</a></div>
+                <div class="visible-md visible-lg col-md-3" id="Menu-toggle"><a class='scroll' href='#desk-top'>Henrik Holmlund</a></div>
+                <div class="col-xs-6 col-md-3" id="About-toggle"><a class='scroll' href='#About-top'>About</a></div>
+                <div class="col-xs-6 col-md-6 navbar-push-right" ><a class="scroll" href="#Contact-top">Contact</a></div>
             </div>
         </div>
     </nav>
+</div>
+<div class="hidden-md hidden-lg">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll" href="#skrollr-body" style="color: black">Henrik Holmlund</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#About-top" class="scroll">About <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#Portfolio-top" class="scroll">Portfolio</a></li>
+                    <li><a href="#Contact-top" class="scroll">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+    <div id="skrollr-body">
     <div class="row about-me" id="About-top">
         <div class="col-sm-12 col-md-offset-4 col-md-6">
             <p>Hi there and welcome to my portfolio page!</p>
             <p> My name is Henrik Holmlund and I am a freelance Front End Developer working in Stockholm, Sweden.</p>
-            <p>I am currently enrolled at the Front End Developer-program at <a href="http://nackademin.se/utbildningar/frontend-utvecklare/">Nackademin</a>, and my planned graduation date is May 2016. </p>
-            <p>Please contact me for further info or other inquiries</p>
-            <p>See below for some samples of my work, either inside or outside of school</p>
+            <p>I am currently enrolled at the Front End Developer-program at <a href="http://nackademin.se/utbildningar/frontend-utvecklare/" target="_blank">Nackademin</a>, and my planned graduation date is May 2016. </p>
+            <p>Please contact me for further info or other inquiries.</p>
+            <p>See below for some samples of my work, either inside or outside of school.</p>
         </div>
         <div class="col-md-2"></div>
     </div>
+<div class="container-gallery">
     <div class="portfolio-list row" id="Portfolio-top">
-        <div class="visible-lg col-lg-offset-3 col-lg-1 ">2016-01</div>
-        <div class="col-xs-11 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-3">Charityfy</div>
-        <div class="visible-md visible-lg col-md-5 col-lg-4">School group project based on AngularJS</div>
-        <div class="col-xs-1 col-md-1 pull-right"><a href="http://jonatanjohnsson.github.io/Charityfy-public/" target="_blank"><i class="fa fa-long-arrow-right"></i></a></div>
 
-        <div class="visible-lg col-lg-offset-3 col-lg-1">2015-10</div>
-        <div class="col-xs-11 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-3">Årstaligan</div>
-        <div class="visible-md visible-lg col-md-5 col-lg-4">Wordpress page for a kindergarten</div>
-        <div class="col-xs-1 col-md-1 pull-right"><a href="http://www.arstaligan.se/" target="_blank"><i class="fa fa-long-arrow-right"></i></a></div>
+            <div class="col-md-6">
+                <a href="http://jonatanjohnsson.github.io/Charityfy-public/" target="_blank">
+                    <h3 class="visible-md visible-lg">Charityfy</h3>
+                    <p class="visible-md visible-lg">A school group project based on AngularJS</p>
+                    <img src="images/charityfy.jpg" class="img-responsive center-block" alt="a blue front page">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="http://www.arstaligan.se/" target="_blank">
+                    <h3 class="visible-md visible-lg">Årstaligan</h3>
+                    <p class="visible-md visible-lg">Wordpress page for a kindergarten</p>
+                    <img src="images/arstaligan.jpg" class="img-responsive center-block" alt="a landing page for a site">
+                </a>
+            </div>
+    </div>
 
-        <div class="visible-lg col-lg-offset-3 col-lg-1">2015-09</div>
-        <div class="col-xs-11 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-3">Music is a dead language</div>
-        <div class="visible-md visible-lg col-md-5 col-lg-4">Infographic about music notation</div>
-        <div class="col-xs-1 col-md-1 pull-right"><a href="http://henrikholmlund.se/infographic/" target="_blank"><i class="fa fa-long-arrow-right"></i></a></div>
-
-        <div class="visible-lg col-lg-offset-3 col-lg-1">2015-09</div>
-        <div class="col-xs-11 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-3">Nomad/Monad</div>
-        <div class="visible-md visible-lg col-md-5 col-lg-4">Short JS-game based on Phaser.io engine </div>
-        <div class="col-xs-1 col-md-1 pull-right"><a href="http://henrikholmlund.se/Pekaklicka/" target="_blank"><i class="fa fa-long-arrow-right"></i></a></div>
-
-
-        <div class="visible-lg col-lg-offset-3 col-lg-1">2014-10</div>
-        <div class="col-xs-11 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-3">Mockup</div>
-        <div class="visible-md visible-lg col-md-5 col-lg-4">My first for a Netflix-type site</div>
-        <div class="col-xs-1 col-md-1 pull-right"><a href="images/Mockup-huvudsida-webb.jpg" target="_blank"><i class="fa fa-long-arrow-right"></i></a></div>
+    <div class="portfolio-list-2 row">
+            <div class="col-md-6">
+                <a href="http://henrikholmlund.se/infographic/" target="_blank">
+                    <h3 class="visible-md visible-lg">Music is a dead language</h3>
+                    <p class="visible-md visible-lg">Infographic about music notation</p>
+                    <img src="images/music-notation.jpg" class="img-responsive center-block" alt="music notation">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="http://henrikholmlund.se/Pekaklicka/" target="_blank">
+                    <h3 class="visible-md visible-lg">Nomad/Monad</h3>
+                    <p class="visible-md visible-lg">Short JS-game concept based on Phaser.io engine</p>
+                    <img src="images/nomad.jpg" class="img-responsive center-block" alt="a game background">
+                </a>
+            </div>
 
     </div>
+</div>
+
     <nav class="navbar navbar-default navbar-bottom footer-nav" id="Contact-top">
         <div class="container-fluid">
-            <div class="col-md-4">Contact</div>
-            <div class="col-md-4"><a href="mailto:henrik@henrikholmlund.se">Mail</a></div>
-            <div class="col-md-4"><a href="tel:+46709471871">+46709471871</a></div>
+            <div class="col-xs-6  col-md-3" ><a href="mailto:henrik@henrikholmlund.se">Mail</a></div>
+            <div class="col-xs-6  col-md-3 footer-center"><a href="tel:+46709471871">Phone</a></div>
+            <div class="col-xs-6  col-md-3 footer-center"><a href="https://github.com/henrikholmlund/" target="_blank">GitHub</a></div>
+            <div class="col-xs-6  col-md-3 footer-right"><a href="https://se.linkedin.com/in/henrik-holmlund-8b2068b8" target="_blank">Linkedin</a></div>
         </div>
     </nav>
-
-
-
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--build:js js/main.min.js -->
     <script src="vendor/skrollr.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <!--endbuild-->
 </body>
 </html>

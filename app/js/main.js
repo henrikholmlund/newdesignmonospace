@@ -7,6 +7,7 @@ var s = skrollr.init();
 
 var aboutToggle = document.getElementById("About-toggle");
 var menuToggle = document.getElementById("Menu-toggle");
+var portFolioToggle = document.querySelector("h1");
 
 
 var last_known_scroll_position = 0;
@@ -16,18 +17,20 @@ function navToggle (scroll_pos) {
     // changes the links for the navbar
 
     if(last_known_scroll_position >= 500){
-        aboutToggle.innerHTML = "<a class='scroll' href='#Portfolio-top'>Portfolio</a>";
+        // aboutToggle.innerHTML = "<a class='scroll' href='#Portfolio-top'>Portfolio</a>";
         menuToggle.innerHTML = "<a class='scroll' href='#Top'>&uarr; Top</a>";
+        portFolioToggle.innerHTML = "Portfolio Gallery";
     }
     else if (last_known_scroll_position >= 800) {
 
-        aboutToggle.innerHTML = "<a class='scroll' href='#Contact-top'>Contact</a>";
+        // aboutToggle.innerHTML = "<a class='scroll' href='#Contact-top'>Contact</a>";
         menuToggle.innerHTML = "<a class='scroll' href='#Top'>&uarr; Top</a>";
     }
 
     else {
-        aboutToggle.innerHTML = "<a class='scroll' href='#About-top'>About</a>";
-        menuToggle.innerHTML = "<a class='scroll' href='#Top'>Menu</a>";
+        // aboutToggle.innerHTML = "<a class='scroll' href='#About-top'>About</a>";
+        menuToggle.innerHTML = "<a class='scroll' href='#Top'>Henrik Holmlund</a>";
+        portFolioToggle.innerHTML = "Portfolio";
     }
 }
 
