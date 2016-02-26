@@ -1,9 +1,27 @@
+<!--
+   _    _      _ _
+ | |  | |    | | |
+ | |__| | ___| | | ___
+ |  __  |/ _ \ | |/ _ \
+ | |  | |  __/ | | (_) |
+ |_|_ |_|\___|_|_|\___( )         _                _                       _
+  / _|   | | |        |/         | |              | |                     | |
+ | |_ ___| | | _____      __   __| | _____   _____| | ___  _ __   ___ _ __| |
+ |  _/ _ \ | |/ _ \ \ /\ / /  / _` |/ _ \ \ / / _ \ |/ _ \| '_ \ / _ \ '__| |
+ | ||  __/ | | (_) \ V  V /  | (_| |  __/\ V /  __/ | (_) | |_) |  __/ |  |_|
+ |_| \___|_|_|\___/ \_/\_/    \__,_|\___| \_/ \___|_|\___/| .__/ \___|_|  (_)
+                                                          | |
+                                                          |_|
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio for Henrik Holmlund, Front End Developer</title>
+    <meta name="description" content="Welcome to the portfolio page of freelance Front End-developer Henrik Holmlund. Portfoliosida för Front End-utvecklaren Henrik Holmlund i Stockholm">
+    <meta name="keywords" content="Front End Stockholm Portfolio web design">
+    <meta name="author" content="Henrik Holmlund">
+    <title>Henrik Holmlunds Portfolio page</title>
     <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -11,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--endbuild-->
 </head>
-<body>
+<body id="body-top">
 
 
     <div class="visible-md visible-lg parallax-div">
@@ -25,7 +43,9 @@
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top main-navigation" id="desk-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="visible-md visible-lg col-md-3" id="Menu-toggle"><a class='scroll' href='#desk-top'>Henrik Holmlund</a></div>
+                <div class="visible-md visible-lg col-md-3">
+                    <a class='scroll' href='#body-top'><span class="visible" id="Menu-toggle">Henrik Holmlund</span><span class="invisible" id="Menu-toggle-2">&uarr; Top</span></a>
+                </div>
                 <div class="col-xs-6 col-md-3" id="About-toggle"><a class='scroll' href='#About-top'>About</a></div>
                 <div class="col-xs-6 col-md-6 navbar-push-right" ><a class="scroll" href="#Contact-top">Contact</a></div>
             </div>
@@ -108,10 +128,10 @@
 
     <nav class="navbar navbar-default navbar-bottom footer-nav" id="Contact-top">
         <div class="container-fluid">
-            <div class="col-xs-6  col-md-3" ><a href="mailto:henrik@henrikholmlund.se">Mail</a></div>
+            <div class="col-xs-6  col-md-3 footer-center" ><a href="mailto:henrik@henrikholmlund.se">Mail</a></div>
             <div class="col-xs-6  col-md-3 footer-center"><a href="tel:+46709471871">Phone</a></div>
             <div class="col-xs-6  col-md-3 footer-center"><a href="https://github.com/henrikholmlund/" target="_blank">GitHub</a></div>
-            <div class="col-xs-6  col-md-3 footer-right"><a href="https://se.linkedin.com/in/henrik-holmlund-8b2068b8" target="_blank">Linkedin</a></div>
+            <div class="col-xs-6  col-md-3 footer-center"><a href="https://se.linkedin.com/in/henrik-holmlund-8b2068b8" target="_blank">Linkedin</a></div>
         </div>
     </nav>
     </div>

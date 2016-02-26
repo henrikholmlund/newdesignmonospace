@@ -7,12 +7,36 @@ var s = skrollr.init();
 
 var aboutToggle = document.getElementById("About-toggle");
 var menuToggle = document.getElementById("Menu-toggle");
+var menuToggle2 = document.getElementById("Menu-toggle-2")
 var portFolioToggle = document.querySelector("h1");
-
+var toggleClasses = document.getElementsByClassName("visible");
 
 var last_known_scroll_position = 0;
 var ticking = false;
 
+function navToggle (scroll_pos) {
+    // changes the links for the navbar
+
+        if(last_known_scroll_position >= 500){
+            menuToggle.setAttribute("class", "invisible");
+            menuToggle2.setAttribute("class", "visible");
+            portFolioToggle.innerHTML = "Portfolio Gallery";
+        }
+        else if (last_known_scroll_position >= 800) {
+
+            menuToggle.setAttribute("class", "invisible");
+            menuToggle2.setAttribute("class", "visible");
+        }
+
+        else {
+            menuToggle.setAttribute("class", "visible");
+            menuToggle2.setAttribute("class", "invisible");
+            portFolioToggle.innerHTML = "Portfolio";
+        }
+
+}
+
+/*
 function navToggle (scroll_pos) {
     // changes the links for the navbar
 
@@ -33,6 +57,8 @@ function navToggle (scroll_pos) {
         portFolioToggle.innerHTML = "Portfolio";
     }
 }
+
+*/
 
 window.addEventListener('scroll', function(e) {
     last_known_scroll_position = window.scrollY;

@@ -1,4 +1,4 @@
- /*  * {
+  /*  * {
   outline: 1px solid red;
 } */
 
@@ -37,7 +37,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
   /* overflow: scroll;
   -webkit-overflow-scrolling: touch; */
 
@@ -167,7 +167,7 @@ a {
 
 img {
   max-width: 80%;
- // margin: auto;
+  margin: auto;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 
@@ -253,8 +253,15 @@ img {
 
 
   }
+  .header-left {
+    display: flex;
+    align-items: center;
 
-  .portfolio-list, .portfolio-list-2 {
+  }
+
+
+
+.portfolio-list, .portfolio-list-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,6 +330,27 @@ img {
      padding-top: 70px;
    }
 
+   .visible {
+     visibility: visible;
+   }
+
+   .invisible {
+     visibility: hidden;
+   }
+
+   // hack for putting the html in the menu at the same position //
+
+   #Menu-toggle {
+     position: absolute;
+     left: 15px;
+   }
+
+   #Menu-toggle-2 {
+     position: absolute;
+     left: 15px;
+   }
+
+
    .portfolio-list {
      display:flex;
      justify-content:center;
@@ -342,11 +370,11 @@ img {
          padding: 2em;
          color: black;
          opacity: 0;
-         -webkit-transform: translate3d(0,100%,0);
+         transform: translate3d(0,100%,0);
          transform: translate3d(0,100%,0);
          transition: opacity 0.2s, transform 0.35s;
          z-index: 9;
-         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
          font-weight: bold;
        }
 
@@ -356,11 +384,11 @@ img {
          padding: 2em;
          color: black;
          opacity: 0;
-         -webkit-transform: translate3d(0,100%,0);
+         transform: translate3d(0,100%,0);
          transform: translate3d(0,100%,0);
          transition: opacity 0.2s, transform 0.35s;
          z-index: 9;
-         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
 
 
        }
@@ -377,7 +405,7 @@ img {
        &:hover {
          h3, p {
            opacity: 1;
-           -webkit-transform: translate3d(0,0,0);
+           transform: translate3d(0,0,0);
            transform: translate3d(0,0,0);
          }
        }
@@ -409,11 +437,11 @@ img {
          padding: 2em;
          color: black;
          opacity: 0;
-         -webkit-transform: translate3d(0, 200%, 0);
+         transform: translate3d(0, 200%, 0);
          transform: translate3d(0, 100%, 0);
          transition: opacity 0.2s, transform 0.35s;
          z-index: 9;
-         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
          font-weight: bold;
        }
 
@@ -423,11 +451,11 @@ img {
          padding: 2em;
          color: black;
          opacity: 0;
-         -webkit-transform: translate3d(0, 200%, 0);
+         transform: translate3d(0, 200%, 0);
          transform: translate3d(0, 100%, 0);
          transition: opacity 0.2s, transform 0.35s;
          z-index: 9;
-         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
 
        }
 
@@ -442,7 +470,7 @@ img {
        &:hover {
          h3, p {
            opacity: 1;
-           -webkit-transform: translate3d(0, 0, 0);
+           transform: translate3d(0, 0, 0);
            transform: translate3d(0, 0, 0);
          }
        }
