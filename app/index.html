@@ -87,12 +87,13 @@
         </div><!-- /.container-fluid -->
     </nav>
 </div>
+    <div itemscope itemtype="https://schema.org/Person">
     <div id="skrollr-body">
     <div class="row about-me" id="About-top">
-        <div class="col-sm-12 col-md-offset-4 col-md-6">
+        <div class="col-sm-12 col-md-offset-4 col-md-6" >
             <p>Hi there and welcome to my portfolio page!</p>
-            <p> My name is Henrik Holmlund and I am a freelance Front End Developer working in Stockholm, Sweden.</p>
-            <p>I am currently enrolled at the Front End Developer-program at <a href="http://nackademin.se/utbildningar/frontend-utvecklare/" target="_blank">Nackademin</a>, and my planned graduation date is May 2016. </p>
+            <p> My name is <span itemprop="name">Henrik Holmlund</span> and I am a freelance <span itemprop="jobTitle">Front End Developer</span> working in <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Stockholm</span>, <span itemprop="addressCountry">Sweden</span></span>.</p>
+            <p>I am currently enrolled at the Front End Developer-program at <a href="http://nackademin.se/utbildningar/frontend-utvecklare/" target="_blank" itemprop="affiliation">Nackademin</a>, and my planned graduation date is May 2016. </p>
             <p>Please contact me for further info or other inquiries.</p>
             <p>See below for some samples of my work, either inside or outside of school.</p>
         </div>
@@ -112,7 +113,7 @@
                 <a href="http://www.arstaligan.se/" target="_blank">
                     <h3 class="visible-md visible-lg">Årstaligan</h3>
                     <p class="visible-md visible-lg">Wordpress page for a kindergarten</p>
-                    <img src="images/arstaligan.jpg" class="img-responsive center-block" alt="a landing page for a site">
+                    <img src="images/arstaligan.jpg" class="img-responsive center-block" alt="a landing page with kids in animal costumes">
                 </a>
             </div>
     </div>
@@ -138,12 +139,13 @@
 
     <nav class="navbar navbar-default navbar-bottom footer-nav" id="Contact-top">
         <div class="container-fluid">
-            <div class="col-xs-6  col-md-3 footer-center" ><a href="mailto:henrik@henrikholmlund.se">Mail</a></div>
-            <div class="col-xs-6  col-md-3 footer-center"><a href="tel:+46709471871">Phone</a></div>
+            <div class="col-xs-6  col-md-3 footer-center" ><a href="mailto:henrik@henrikholmlund.se" itemprop="email">Mail</a></div>
+            <div class="col-xs-6  col-md-3 footer-center"><a href="tel:+46709471871"><span itemprop="telephone">+46709471871</span></a></div>
             <div class="col-xs-6  col-md-3 footer-center"><a href="https://github.com/henrikholmlund/" target="_blank">GitHub</a></div>
             <div class="col-xs-6  col-md-3 footer-center"><a href="https://se.linkedin.com/in/henrik-holmlund-8b2068b8" target="_blank">Linkedin</a></div>
         </div>
     </nav>
+    </div>
     </div>
 
 
