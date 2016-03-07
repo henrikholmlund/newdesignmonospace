@@ -9,7 +9,7 @@ var aboutToggle = document.getElementById("About-toggle");
 var menuToggle = document.getElementById("Menu-toggle");
 var menuToggle2 = document.getElementById("Menu-toggle-2")
 var portFolioToggle = document.querySelector("h1");
-var toggleClasses = document.getElementsByClassName("visible");
+var toggleClasses = document.getElementsByClassName("swe-visible");
 
 var last_known_scroll_position = 0;
 var ticking = false;
@@ -19,17 +19,17 @@ function navToggle (scroll_pos) {
 
     if(last_known_scroll_position >= 500){
         menuToggle.setAttribute("class", "invisible");
-        menuToggle2.setAttribute("class", "visible");
+        menuToggle2.setAttribute("class", "swe-visible");
         portFolioToggle.innerHTML = "Portfolio Galleri";
     }
     else if (last_known_scroll_position >= 800) {
 
         menuToggle.setAttribute("class", "invisible");
-        menuToggle2.setAttribute("class", "visible");
+        menuToggle2.setAttribute("class", "swe-visible");
     }
 
     else {
-        menuToggle.setAttribute("class", "visible");
+        menuToggle.setAttribute("class", "swe-visible");
         menuToggle2.setAttribute("class", "invisible");
         portFolioToggle.innerHTML = "Portfolio";
     }
